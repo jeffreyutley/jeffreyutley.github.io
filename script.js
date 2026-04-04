@@ -16,11 +16,6 @@ document.addEventListener('DOMContentLoaded', function() {
       if (isOpen) { closeMenu(); } else { openMenu(); }
     });
 
-    // Close when clicking outside
-    document.addEventListener('click', function(e){
-      if (!dd.contains(e.target)) closeMenu();
-    });
-
     // Keyboard accessibility
     btn.addEventListener('keydown', function(e){
       if (e.key === 'ArrowDown' || e.key === 'Enter' || e.key === ' ') {
@@ -30,5 +25,16 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
     menu.addEventListener('keydown', function(e){ if (e.key === 'Escape') closeMenu(); });
+  });
+
+  // Close when clicking outside
+  document.addEventListener('click', function(e){
+    dropdowns.forEach(dd => {
+      if (!dd.contains(e.target)) {
+        dd.classList.remove('open');
+        const btn = dd.querySelector('.dropbtn');
+        if (btn) btn.setAttribute('aria-expanded', 'false');
+      }
+    });
   });
 });
