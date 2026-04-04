@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculum Vitae</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <header>
+    <h1>Curriculum Vitae</h1>
+  </header>
+  
+<nav>
+  <a href="index.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn" aria-haspopup="true" aria-expanded="false">Research ▾</button>
+    <div class="dropdown-content" role="menu">
+      <a role="menuitem" href="research/overview.html">Overview</a>
+      <a role="menuitem" href="research/publications.html">Publications</a>
+      <a role="menuitem" href="research/presentations.html">Presentations</a>
+    </div>
+  </div>
+  <a href="projects.html">Projects</a>
+  <a href="teaching.html">Teaching</a>
+  <a href="cv.html" class="active">CV</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+  <div class="container">
+    <p>
+      You can view my CV below (updated April 2026).
+    </p>
+    <a href="CV.pdf" class="btn" target="_blank" style="margin-bottom: 2rem;">Download CV (PDF)</a>
+    <hr style="margin: 2rem 0; border: 0; border-top: 1px solid #ccc;">
+    
+    <div class="cv-text">
+      
+      <!-- Header Info -->
+      <div style="text-align:center; margin-bottom:2rem;">
+        <p style="margin:0; font-weight:bold; font-size:1.2rem;">Jeffrey Utley</p>
+        <p style="margin:0.25rem 0;">PhD Candidate | Synthetic Data Generation, Statistical Modeling & Imaging</p>
+        <p style="margin:0.25rem 0;">Purdue University — Department of Mathematics | West Lafayette, IN</p>
+        <p style="margin:0.25rem 0;">
+          <a href="mailto:utleyj@purdue.edu">utleyj@purdue.edu</a> | 
+          <a href="index.html" target="_blank" rel="noopener noreferrer">[Website]</a> | 
+          <a href="https://github.com/jeffreyutley" target="_blank" rel="noopener noreferrer">[GitHub]</a> | 
+          <a href="https://linkedin.com/in/jeffrey-utley" target="_blank" rel="noopener noreferrer">[LinkedIn]</a>
+        </p>
+        <p style="margin:0.25rem 0;">U.S. Citizen | SECRET eligibility through Aug 2028</p>
+      </div>
+
+      <!-- Research & Technical Summary -->
+      <h2>Research & Technical Summary</h2>
+      <ul class="cv-list">
+        <li>PhD candidate developing statistically validated <strong>synthetic data generation</strong> algorithms and reproducible scientific software for turbulence-driven imaging and simulation.</li>
+        <li>Targeting national laboratory Research Scientist / Staff Research roles and R&D industry roles. Focus areas: modeling/estimation/simulation; computational imaging; signal processing; scientific software.</li>
+        <li>Validated algorithms on measured wind-tunnel datasets; collaborated with AFRL/AFIT staff and briefed technical progress.</li>
+        <li>Production-minded research software: modular, versioned, installable packages with reproducible results and publishable outcomes.</li>
+      </ul>
+
+      <!-- Technical Skills -->
+      <h2>Technical Skills</h2>
+      <ul class="cv-list">
+        <li>METHODS: synthetic data generation; inverse problems and parameter estimation; spectral analysis (FFT, PSD, PCA); numerical optimization (first-order methods; Mirror Descent); Bayesian inference (coursework).</li>
+        <li>PROGRAMMING LANGUAGES: Python, C/C++, MATLAB, Julia.</li>
+        <li>SCIENTIFIC COMPUTING & DATA (COURSEWORK/RESEARCH/PROJECTS): NumPy (FFT), SciPy, pandas, Matplotlib, Jupyter; seaborn (coursework); OpenCV (research/projects).</li>
+        <li>ML FRAMEWORKS (COURSEWORK/TOOLS): PyTorch, JAX.</li>
+        <li>COMPUTATIONAL ENVIRONMENTS (COURSEWORK/RESEARCH/PROJECTS): Linux/UNIX; bash/shell scripting; SSH; Slurm (HPC job scheduling on Purdue clusters); Make (coursework).</li>
+        <li>DEVELOPMENT & REPRODUCIBILITY TOOLS (COURSEWORK/RESEARCH/PROJECTS): pip; conda; Git/GitHub; setuptools/pyproject (research/projects); LaTeX; Vim, PyCharm, Visual Studio.</li>
+      </ul>
+
+      <!-- Education -->
+      <h2>Education</h2>
+      <div class="cv-item">
+        <div class="cv-header">
+          <span>PhD, Purdue University - Mathematics</span>
+          <span class="cv-date">Expected May 2027</span>
+        </div>
+        <div>GPA: 4.00 | Concentration: Computational Science</div>
+      </div>
+      <div class="cv-item">
+        <div class="cv-header">
+          <span>BS, Mathematics (Honors) - University of Tennessee</span>
+          <span class="cv-date">May 2022</span>
+        </div>
+        <div>GPA: 3.98 | Minor: Computer Science</div>
+      </div>
+
+      <!-- Research Experience -->
+      <h2>Research Experience</h2>
+      
+      <div class="cv-item">
+        <div class="cv-header">
+          <span>Graduate Research Assistant — Purdue University</span>
+          <span class="cv-date">Jan 2023 – Present</span>
+        </div>
+        <div class="cv-sub">Advisors: Prof. Gregery Buzzard & Prof. Charles Bouman</div>
+        <ul class="cv-list">
+          <li>Develop and validate synthetic phase-screen generation algorithms from measured turbulence data; coordinate results and software deliverables with AFRL/AFIT collaborators.
+            <ul>
+              <li>Fourier-based method (BoilingFlow implementation): parameter estimation validated on measured + simulated turbulence; spatial-anisotropy extension validated on measured data.</li>
+              <li>Data-driven method: validated on measured wind-tunnel datasets via temporal/spatial statistics matching.</li>
+            </ul>
+          </li>
+          <li>Deliver reproducible research software and technical results: modular, version-controlled code; first-author SPIE proceedings; coordination with AFRL/AFIT collaborators.</li>
+        </ul>
+      </div>
+
+      <div class="cv-item">
+        <div class="cv-header">
+          <span>Doctoral Research Fellow (ORISE) — AFIT (virtual)</span>
+          <span class="cv-date">May 2025 – Aug 2025</span>
+        </div>
+        <div class="cv-sub">Mentor: Prof. Matthew Kemnetz</div>
+        <ul class="cv-list">
+          <li>Contributed to the Purdue–AFRL/AFIT collaboration with a focus on the Fourier-based method; delivered weekly virtual technical briefings to AFIT staff; supported a SPIE conference-paper deliverable.</li>
+        </ul>
+      </div>
+
+      <div class="cv-item">
+        <div class="cv-header">
+          <span>AFRL Scholars Program (USRA) — AFRL</span>
+          <span class="cv-date">May 2024 – Aug 2024</span>
+        </div>
+        <div class="cv-sub">Mentor: Prof. Matthew Kemnetz</div>
+        <ul class="cv-list">
+          <li>Contributed to the Purdue–AFRL collaboration by developing and evaluating the data-driven method; delivered an end-of-summer technical briefing to AFRL staff; supported a separate SPIE conference-paper deliverable.</li>
+        </ul>
+      </div>
+
+      <h2>Algorithmic Contributions</h2>
+      <ul class="cv-list">
+        <li><strong>Data-driven method</strong> (new): developed a novel synthesis algorithm that improves match to measured spatiotemporal statistics relative to Fourier-based baselines.</li>
+        <li><strong>Fourier-based method</strong> (existing): developed an automated calibration/parameter-estimation method to match measured spatiotemporal statistics (distribution matching) and implemented a spatial-anisotropy extension.</li>
+      </ul>
+
+      <h2>Software Projects</h2>
+      <ul class="cv-list">
+        <li><strong>AOModel</strong> — installable Python package implementing the data-driven ReVAR algorithm for aero-optic modeling and synthetic phase screen generation. Validated on two wind-tunnel datasets (worst-case NRMSE = 4% for temporal power spectrum match). Includes package installation scripts, thorough documentation, and reproducible examples. <a href="https://github.com/jeffreyutley/aomodel_public" target="_blank" rel="noopener noreferrer">[GitHub]</a></li>
+        <li><strong>BoilingFlow</strong> — installable Python package (Anaconda; NumPy/SciPy; FFT/PSD matching) implementing the Fourier-based phase-screen generation method; validated on two wind-tunnel datasets (worst-case NRMSE = 12% for temporal power spectrum match). Includes package installation scripts. <a href="https://github.com/jeffreyutley/boiling_flow" target="_blank" rel="noopener noreferrer">[GitHub]</a></li>
+      </ul>
+
+      <h2>Publications</h2>
+
+      <h3>Conference Proceedings</h3>
+      <ul>
+        <li>Utley, J., Buzzard, G., Bouman, C., & Kemnetz, R. (2025). Boiling flow parameter estimation from boundary layer data. SPIE. <a href="https://doi.org/10.1117/12.3063655" target="_blank" rel="noopener noreferrer">[DOI:10.1117/12.3063655]</a> Preprint: <a href="https://arxiv.org/abs/2602.10394" target="_blank" rel="noopener noreferrer">[arXiv:2602.10394]</a></li>
+        <li>Utley, J., Buzzard, G., Bouman, C., & Kemnetz, R. (2024). Data-driven synthetic wavefront generation for boundary layer data. SPIE. <a href="https://doi.org/10.1117/12.3027740" target="_blank" rel="noopener noreferrer">[DOI:10.1117/12.3027740]</a> Preprint: <a href="https://arxiv.org/abs/2409.04873" target="_blank" rel="noopener noreferrer">[arXiv:2409.04873]</a></li>
+      </ul>
+
+      <h3>Preprint (Under Review)</h3>
+      <ul>
+        <li>Utley, J., Buzzard, G., Bouman, C., & Kemnetz, R. ReVAR: A data-driven algorithm for generating aero-optic phase screens. Under review. <a href="https://doi.org/10.48550/arXiv.2604.02326" target="_blank" rel="noopener noreferrer">[arXiv:2604.02326]</a></li>
+        <li>Utley, J., Buzzard, G., Bouman, C., & Kemnetz, R. Boiling flow estimation for aero-optic phase screen generation. Under review. <a href="https://doi.org/10.48550/arXiv.2601.12171" target="_blank" rel="noopener noreferrer">[arXiv:2601.12171]</a></li>
+      </ul>
+
+      <h2>Additional Research</h2>
+      <ul class="cv-list">
+        <li>Stochastic modeling of beetle infestations (Midwest REG, University of Michigan, Aug 2023).</li>
+        <li>Undergraduate research in complex analysis resulting in a peer-reviewed journal article: Lind, J. & Utley, J. (2022). <i>Involve</i>, 15(3), 447–474. <a href="https://doi.org/10.2140/involve.2022.15.447" target="_blank" rel="noopener noreferrer">[DOI:10.2140/involve.2022.15.447]</a> Preprint: <a href="https://arxiv.org/abs/2106.14940" target="_blank" rel="noopener noreferrer">[arXiv:2106.14940]</a></li>
+        <li>Companion software (undergraduate): <strong>ModifiedBleatAlgorithm</strong> — MATLAB implementation of the algorithm from the above journal article. <a href="https://github.com/jeffreyutley/Modified-BLEAT-Algorithm" target="_blank" rel="noopener noreferrer">[GitHub]</a></li>
+      </ul>
+
+      <h2>Presentations</h2>
+      <ul class="cv-list">
+        <li><strong>Electronic Imaging 2026</strong> — “ReVAR: A data-driven algorithm for generating aero-optic phase screens.”</li>
+        <li><strong>SPIE Optics + Photonics 2025</strong> — “Boiling flow parameter estimation from boundary layer data.”</li>
+        <li><strong>Electronic Imaging 2025</strong> — “Synthetic wavefront generation for aero-induced turbulence using boundary layer data.”</li>
+        <li><strong>SPIE Optics + Photonics 2024</strong> — “Data-driven synthetic wavefront generation for boundary layer data.”</li>
+        <li><strong>Directed Energy S&T Symposium 2024</strong> — “Synthetic Wavefront Generation for Aero-Optics Correction.”</li>
+      </ul>
+
+      <h2>Teaching, Awards & Leadership</h2>
+      <ul class="cv-list">
+        <li>TEACHING: Instructor (University of Michigan, Wolverine Pathways, 2022–2023); Graduate TA (Purdue, 2022); Undergraduate TA (University of Tennessee, 2020–2022).</li>
+        <li>LEADERSHIP: Vice President, SIAM Student Chapter (Purdue), 2024–Present; Co-organizer, CCAM Lunch Seminar (Purdue Mathematics), 2025-Present.</li>
+        <li>SERVICE: Reviewer, Optical Engineering (SPIE), 2025–Present (2 manuscripts).</li>
+        <li>AWARDS: SPIE Student Conference Support Award (2024); Purdue College of Science Travel Award (2024); John H. Barrett Prize (2022).</li>
+      </ul>
+
+    </div>
+
+  </div>
+  <footer>&copy; 2026 Jeffrey Utley</footer>
+  
+<script src="script.js"></script>
+
+</body>
+</html>

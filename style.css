@@ -1,0 +1,239 @@
+:root {
+  --bg: #f3f4f6;          /* Light gray/blue tint background */
+  --text: #334155;        /* Slate gray for better readability */
+  --heading: #0f172a;     /* Near black for headings */
+  --brand: #1e3a8a;       /* Deep Academic Blue */
+  --brand-dark: #172554;  /* Darker Navy for Nav/Footer */
+  --accent: #f59e0b;      /* Amber/Gold for subtle highlights */
+  --white: #ffffff;
+  --link: #2563eb;        /* Standard accessible blue for links */
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.7;
+}
+
+/* Header */
+header {
+  background: var(--brand);
+  color: var(--white);
+  padding: 2.5rem 1rem;
+  text-align: center;
+  border-bottom: 4px solid var(--brand-dark);
+}
+header h1 { margin: 0; font-size: 2.5rem; font-weight: 700; color: var(--white); }
+header p { margin: 0.5rem 0 0; opacity: 0.9; font-size: 1.1rem; }
+
+/* Navigation */
+nav {
+  background: var(--brand-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+}
+
+nav a, nav button {
+  color: rgba(255,255,255,0.85);
+  text-decoration: none;
+  padding: 1rem 1.25rem;
+  border: 0;
+  background: transparent;
+  font: inherit;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  border-bottom: 3px solid transparent;
+}
+
+nav a:hover, nav button:hover, nav a:focus-visible, nav button:focus-visible {
+  background: rgba(255,255,255,0.1);
+  color: var(--white);
+  outline: none;
+}
+
+nav a.active, nav button.active {
+  color: var(--white);
+  border-bottom-color: var(--accent);
+}
+
+/* Dropdown */
+.dropdown { position: relative; }
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 220px;
+  background: var(--white);
+  color: var(--text);
+  border: 1px solid #e5e7eb;
+  border-radius: 0 0 8px 8px;
+  padding: 0.5rem 0;
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+  display: none;
+}
+.dropdown.open .dropdown-content { display:block; }
+.dropdown-content a {
+  display: block;
+  padding: 0.75rem 1.25rem;
+  color: var(--text);
+  transition: background 0.15s;
+}
+.dropdown-content a:hover, .dropdown-content a:focus-visible {
+  background: #f3f4f6;
+  color: var(--brand);
+}
+
+/* Main Container */
+.container {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 3rem;
+  background: var(--white);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+}
+
+/* Global Elements */
+a { color: var(--link); text-decoration: none; font-weight: 500; }
+a:hover { text-decoration: underline; color: var(--brand); }
+img { max-width: 100%; height: auto; border-radius: 8px; }
+
+/* Headings */
+h1, h2, h3 {
+  font-family: Georgia, Cambria, "Times New Roman", serif;
+  color: var(--heading);
+}
+
+h2 {
+  display: block;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  margin-top: 2.5rem;
+  position: relative;
+}
+/* Small accent line under headings */
+h2::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 60px;
+  height: 2px;
+  background: var(--accent);
+}
+
+h3 {
+  color: var(--brand);
+  margin-bottom: 0.75rem;
+  margin-top: 2rem;
+  font-size: 1.3rem;
+}
+
+/* CV Specifics */
+.cv-item { margin-bottom: 2rem; }
+.cv-header { display: flex; justify-content: space-between; font-weight: 700; flex-wrap: wrap; font-size: 1.1rem; color: var(--heading); }
+.cv-date { white-space: nowrap; margin-left: 1rem; color: var(--text); font-weight: normal; opacity: 0.8; }
+.cv-sub { font-style: italic; margin-bottom: 0.25rem; color: #4b5563; }
+.cv-list { margin-top: 0.5rem; padding-left: 1.2rem; }
+.cv-list li { margin-bottom: 0.4rem; }
+
+/* Skill Badges */
+.badge {
+  display: inline-block;
+  background: #e2e8f0;
+  color: #475569;
+  padding: 0.2rem 0.7rem;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Home/News Specifics */
+.btn {
+  display: inline-block;
+  background: var(--brand);
+  color: var(--white);
+  padding: 0.6rem 1.2rem;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  transition: transform 0.1s, background 0.2s;
+}
+.btn:hover {
+  background: var(--brand-dark);
+  text-decoration: none;
+  color: var(--white);
+  transform: translateY(-1px);
+}
+
+.news-item {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: #f8fafc;
+  border-left: 4px solid var(--brand);
+  border-radius: 4px;
+}
+.news-date {
+  font-weight: 700;
+  color: var(--brand);
+  margin-right: 0.75rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Layout Utilities */
+.flex-layout {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Profile Section Override */
+.profile-section {
+  margin-top: 0;
+  margin-bottom: 3rem;
+}
+
+/* Figure/Image Containers */
+.figure-container {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: var(--brand-dark);
+  color: rgba(255,255,255,0.6);
+  padding: 2rem;
+  margin-top: 4rem;
+  font-size: 0.9rem;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .container { padding: 1.5rem; margin: 1rem; }
+  nav { flex-wrap: wrap; padding: 0.5rem; }
+  nav a, nav button { padding: 0.75rem; font-size: 0.9rem; }
+  .dropdown { width: 100%; text-align: center; }
+  .dropdown-content { position: static; width: 100%; box-shadow: none; border: 1px solid #e5e7eb; }
+  .flex-layout { gap: 1.5rem; }
+  header h1 { font-size: 2rem; }
+}
