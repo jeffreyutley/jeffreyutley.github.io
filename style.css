@@ -221,7 +221,7 @@ h3 {
 .profile-list {
   margin: 0;
   padding-left: 20px;
-  font-size: 18px;
+  font-size: 1.15rem;
 }
 
 /* Skills section groups */
@@ -234,14 +234,14 @@ h3 {
   margin-bottom: 2rem;
 }
 .cv-page-header p { margin: 0.25rem 0; }
-.cv-page-header p:first-child { margin: 0; font-weight: bold; font-size: 1.8rem; }
+.cv-page-header p:first-child { margin: 0; font-weight: 700; font-size: 2.2rem; font-family: Georgia, Cambria, "Times New Roman", serif; }
 
 /* Download button with bottom margin */
 .btn-download { margin-bottom: 2rem; }
 
 /* Section divider */
 hr.section-divider {
-  margin: 2rem 0;
+  margin: 3rem 0;
   border: 0;
   border-top: 1px solid #ccc;
 }
