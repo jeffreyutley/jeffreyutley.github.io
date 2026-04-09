@@ -23,7 +23,7 @@
 <nav>
   <a href="index.html" class="active">Home</a>
   <div class="dropdown">
-    <button class="dropbtn" aria-haspopup="true" aria-expanded="false">Research ▾</button>
+    <button class="dropbtn" aria-haspopup="true" aria-expanded="false">Research <span aria-hidden="true">▾</span></button>
     <div class="dropdown-content" role="menu">
       <a role="menuitem" href="research/overview.html">Overview</a>
       <a role="menuitem" href="research/publications.html">Publications</a>
@@ -38,10 +38,9 @@
 
 <div class="container">
   <div class="flex-layout profile-section">
-    <img src='Jeffrey_Utley.jpg' alt='Profile Photo' width="300" height="auto">
-      
-    <div style="flex:1; min-width:300px;">
-      <h3 style="font-size:24px; margin-top:0;">Profile</h3>
+    <img src='Jeffrey_Utley.jpg' alt='Jeffrey Utley' width="300">
+
+    <div class="profile-text">
       <ul style="margin:0; padding-left:20px; font-size:18px;">
           <li><strong>Title</strong>: Mathematics PhD Candidate (Computational Science)</li>
           <li><strong>Email</strong>: <a href="mailto:utleyj@purdue.edu">utleyj@purdue.edu</a></li>
@@ -51,7 +50,6 @@
           <li><strong>GitHub</strong>: <a href="https://github.com/jeffreyutley" target="_blank" rel="noopener noreferrer">github.com/jeffreyutley</a></li>
           <li><strong>LinkedIn</strong>: <a href="https://www.linkedin.com/in/jeffrey-utley" target="_blank" rel="noopener noreferrer">linkedin.com/in/jeffrey-utley</a></li>
           <li><strong>ResearchGate</strong>: <a href="https://www.researchgate.net/profile/Jeffrey-Utley" target="_blank" rel="noopener noreferrer">researchgate.net/profile/Jeffrey-Utley</a></li>
-          <li><strong>Citizenship</strong>: U.S. Citizen</li>
           <li><strong>Objective</strong>: Seeking R&D Roles (Industry/National Labs)</li>
       </ul>
       <br>
@@ -72,23 +70,23 @@
   </p>
 
   <h2>Technical Skills</h2>
-  <div style="margin-bottom: 1rem;">
-    <div style="margin-bottom: 0.5rem;"><strong>Languages:</strong></div>
+  <div class="skill-group">
+    <div class="skill-label"><strong>Languages:</strong></div>
     <span class="badge">Python</span> <span class="badge">C/C++</span> <span class="badge">MATLAB</span> <span class="badge">Julia</span>
   </div>
-  
-  <div style="margin-bottom: 1rem;">
-    <div style="margin-bottom: 0.5rem;"><strong>Scientific Computing & ML:</strong></div>
+
+  <div class="skill-group">
+    <div class="skill-label"><strong>Scientific Computing & ML:</strong></div>
     <span class="badge">PyTorch</span> <span class="badge">JAX</span> <span class="badge">NumPy/SciPy</span> <span class="badge">pandas</span> <span class="badge">OpenCV</span> <span class="badge">Reproducible Workflows</span>
   </div>
 
-  <div style="margin-bottom: 1rem;">
-    <div style="margin-bottom: 0.5rem;"><strong>Tools:</strong></div>
+  <div class="skill-group">
+    <div class="skill-label"><strong>Tools:</strong></div>
     <span class="badge">Linux/UNIX</span> <span class="badge">Slurm (HPC)</span> <span class="badge">Git/GitHub</span> <span class="badge">LaTeX</span>
   </div>
 
-  <div style="margin-bottom: 1rem;">
-    <div style="margin-bottom: 0.5rem;"><strong>Methods:</strong></div>
+  <div class="skill-group">
+    <div class="skill-label"><strong>Methods:</strong></div>
     <span class="badge">Synthetic Data Generation</span> <span class="badge">Inverse Problems</span> <span class="badge">Parameter Estimation</span> <span class="badge">Spectral Analysis</span> <span class="badge">Statistical Modeling</span> <span class="badge">Numerical Optimization</span>
   </div>
 
@@ -132,8 +130,7 @@
 
   <h2>About Me</h2>
   <p>
-    I am originally from Nashville, Tennessee and went to The University of Tennessee, Knoxville for my undergraduate degree, in math 
-    and computer science. In Knoxville, I really enjoyed the outdoors in the nearby Smoky Mountains and made great use of the many 
+    I am originally from Nashville, Tennessee and went to The University of Tennessee, Knoxville for my undergraduate degree in math. In Knoxville, I really enjoyed the outdoors in the nearby Smoky Mountains and made great use of the many 
     campsites and hiking trails. My favorite mountain was <a href = "https://en.wikipedia.org/wiki/Mount_Le_Conte_(Tennessee)" target="_blank" rel="noopener noreferrer">Mount Le
     Conte</a>, hosting the beautiful Alum Cave and Rainbow Falls trails.
 
