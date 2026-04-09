@@ -217,6 +217,13 @@ h3 {
   min-width: 300px;
 }
 
+/* Profile list */
+.profile-list {
+  margin: 0;
+  padding-left: 20px;
+  font-size: 18px;
+}
+
 /* Skills section groups */
 .skill-group { margin-bottom: 1rem; }
 .skill-label { margin-bottom: 0.5rem; }
@@ -226,6 +233,21 @@ h3 {
   text-align: center;
   margin-bottom: 2rem;
 }
+.cv-page-header p { margin: 0.25rem 0; }
+.cv-page-header p:first-child { margin: 0; font-weight: bold; font-size: 1.8rem; }
+
+/* Download button with bottom margin */
+.btn-download { margin-bottom: 2rem; }
+
+/* Section divider */
+hr.section-divider {
+  margin: 2rem 0;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+/* Core practices section (projects page) */
+.core-practices { margin-top: 1rem; }
 
 /* Figure/Image Containers */
 .figure-container {
