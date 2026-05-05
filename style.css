@@ -265,6 +265,36 @@ footer {
   font-size: 0.9rem;
 }
 
+/* Availability banner (home page) */
+.availability-banner {
+  background: var(--brand);
+  color: var(--white);
+  padding: 0.85rem 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 1.05rem;
+  border-left: 4px solid var(--accent);
+  line-height: 1.5;
+}
+.availability-banner strong { color: var(--white); }
+
+/* Research at a Glance — stat list */
+.research-stats {
+  list-style: none;
+  padding-left: 0;
+  margin: 1rem 0 2rem;
+}
+.research-stats li {
+  padding: 0.7rem 1rem;
+  border-left: 3px solid var(--brand);
+  background: #f8fafc;
+  margin-bottom: 0.6rem;
+  border-radius: 4px;
+  line-height: 1.6;
+}
+.research-stats li strong { color: var(--brand); font-weight: 700; }
+
 /* Mobile */
 @media (max-width: 768px) {
   .container { padding: 1.5rem; margin: 1rem; }

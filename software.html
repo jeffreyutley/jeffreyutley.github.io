@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Software and projects by Jeffrey Utley — Python packages for aero-optic simulation and numerical optimization.">
-  <title>Jeffrey Utley - Software & Projects</title>
+  <meta name="description" content="Research software by Jeffrey Utley — installable Python packages (AOModel, BoilingFlow) for aero-optic synthetic data generation, validated on measured wind tunnel data.">
+  <title>Jeffrey Utley - Software</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Software & Projects</h1>
+    <h1>Software</h1>
     <p>Jeffrey Utley</p>
   </header>
 
@@ -24,7 +24,7 @@
       <a role="menuitem" href="research/presentations.html">Presentations</a>
     </div>
   </div>
-  <a href="projects.html" class="active">Projects</a>
+  <a href="software.html" class="active">Software</a>
   <a href="teaching.html">Teaching</a>
   <a href="cv.html">CV</a>
   <a href="contact.html">Contact</a>
@@ -32,15 +32,17 @@
 
   <div class="container">
     <p>
-      Below is a selection of software packages and coding projects I have developed for research, coursework, and personal interest.
+      Below are my open-source research software packages, plus selected coursework and other personal projects.
       You can find more on my <a href="https://github.com/jeffreyutley" target="_blank" rel="noopener noreferrer">GitHub profile</a>.
     </p>
     <div class="core-practices">
       <strong>Core Practices:</strong>
-      <span class="badge">Git/GitHub</span> <span class="badge">Reproducible Workflows</span>
+      <span class="badge">Git/GitHub</span> <span class="badge">Reproducible Workflows</span> <span class="badge">Installable Packages</span>
     </div>
     <hr class="section-divider">
-    
+
+    <h2>Research Software</h2>
+
     <div class="cv-item">
       <div class="cv-header">
         <span>AOModel</span>
@@ -48,21 +50,20 @@
       </div>
       <div>
         <span class="badge">Python</span>
+        <span class="badge">Installable Package</span>
         <span class="badge">Synthetic Data Generation</span>
-        <span class="badge">Anaconda Package</span>
-        <span class="badge">NumPy</span>
+        <span class="badge">NumPy/SciPy</span>
         <span class="badge">Parameter Estimation</span>
         <span class="badge">Statistical Modeling</span>
         <span class="badge">Aero-Optics</span>
       </div>
       <p>
-        An installable Python package implementing the ReVAR (Re-whitened Vector AutoRegression) algorithm for aero-optic modeling and synthetic phase-screen generation. 
+        Installable Python package implementing the ReVAR (Re-whitened Vector AutoRegression) algorithm for aero-optic modeling and synthetic phase-screen generation, validated on measured wind tunnel data.
         Unlike traditional physics-based models, this fully automated, data-driven approach learns the spatial and temporal statistics of optical turbulence directly from data.
-        Validated on two wind-tunnel datasets, it achieves a worst-case NRMSE of 4% for temporal power spectrum matching. Includes package installation scripts, thorough documentation, and reproducible examples.
+        Validated on two wind-tunnel datasets with worst-case 4% NRMSE on the temporal power spectrum. Includes installation scripts, thorough documentation, and reproducible examples.
       </p>
     </div>
 
-    <!-- Project 1 -->
     <div class="cv-item">
       <div class="cv-header">
         <span>BoilingFlow</span>
@@ -70,21 +71,22 @@
       </div>
       <div>
         <span class="badge">Python</span>
+        <span class="badge">Installable Package</span>
         <span class="badge">Synthetic Data Generation</span>
-        <span class="badge">Anaconda Package</span>
         <span class="badge">NumPy/SciPy</span>
         <span class="badge">Inverse Problems</span>
         <span class="badge">Parameter Estimation</span>
         <span class="badge">Spectral Analysis</span>
       </div>
       <p>
-        An installable Python package for boiling-flow parameter estimation and anisotropic phase-screen generation. 
-        Used to generate statistically validated synthetic data on two wind-tunnel datasets (worst-case NRMSE = 12% for temporal power spectrum match). 
-        Includes package installation scripts and reproducible examples.
+        Installable Python package for boiling-flow parameter estimation and anisotropic phase-screen generation, validated on measured wind tunnel data.
+        Extends a Fourier-based data synthesis method with novel automated parameter estimation and a spatial-anisotropy extension. Validated on two wind-tunnel datasets.
+        Includes installation scripts, thorough documentation, and reproducible examples.
       </p>
     </div>
 
-    <!-- Project 2 -->
+    <h2>Coursework &amp; Other Software</h2>
+
     <div class="cv-item">
       <div class="cv-header">
         <span>MirrorDescent</span>
@@ -96,12 +98,11 @@
         <span class="badge">Numerical Optimization</span>
       </div>
       <p>
-        A Python package implementing the Mirror Descent algorithm with reproducible demos and install scripts. 
+        Python package implementing the Mirror Descent algorithm with reproducible demos and install scripts.
         Demonstrates algorithm implementation, packaging discipline, and mathematical optimization techniques.
       </p>
     </div>
 
-    <!-- Project 3 -->
     <div class="cv-item">
       <div class="cv-header">
         <span>ModifiedBleatAlgorithm</span>
@@ -112,14 +113,14 @@
         <span class="badge">Complex Analysis</span>
       </div>
       <p>
-        MATLAB implementation of the algorithm from my undergraduate research article in <i>Involve</i>. 
+        MATLAB implementation of the algorithm from my undergraduate research article in <i>Involve</i>.
         Used for computing conformal maps and analyzing complex analysis problems.
       </p>
     </div>
 
   </div>
   <footer>&copy; 2026 Jeffrey Utley</footer>
-  
+
 <script src="script.js"></script>
 
 </body>
