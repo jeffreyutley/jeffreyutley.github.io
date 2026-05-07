@@ -56,10 +56,17 @@ nav a, nav button {
   border-bottom: 3px solid transparent;
 }
 
-nav a:hover, nav button:hover, nav a:focus-visible, nav button:focus-visible {
+nav a:hover, nav button:hover {
   background: rgba(255,255,255,0.1);
   color: var(--white);
   outline: none;
+}
+
+nav a:focus-visible, nav button:focus-visible {
+  background: rgba(255,255,255,0.15);
+  color: var(--white);
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
 }
 
 nav a.active, nav button.active {
@@ -224,6 +231,12 @@ h3 {
   font-size: 1.15rem;
 }
 
+/* Profile image: cap at 300px but allow shrinking on small viewports */
+.profile-section img {
+  max-width: 300px;
+  height: auto;
+}
+
 /* Skills section groups */
 .skill-group { margin-bottom: 1rem; }
 .skill-label { margin-bottom: 0.5rem; }
@@ -259,10 +272,108 @@ hr.section-divider {
 footer {
   text-align: center;
   background: var(--brand-dark);
-  color: rgba(255,255,255,0.6);
+  color: rgba(255,255,255,0.85);
   padding: 2rem;
   margin-top: 4rem;
   font-size: 0.9rem;
+}
+
+/* Code blocks (install commands, snippets) */
+code {
+  background: #e2e8f0;
+  color: #0f172a;
+  padding: 0.12rem 0.4rem;
+  border-radius: 3px;
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  font-size: 0.92em;
+}
+pre {
+  background: #0f172a;
+  color: #f1f5f9;
+  padding: 0.85rem 1.1rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  margin: 0.5rem 0 1.25rem;
+}
+pre code {
+  background: transparent;
+  color: inherit;
+  padding: 0;
+  font-size: inherit;
+}
+.install-label {
+  display: block;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--heading);
+  margin-top: 0.75rem;
+  margin-bottom: 0.25rem;
+}
+
+/* Skip-link: visually hidden until focused */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  background: var(--brand-dark);
+  color: var(--white);
+  padding: 0.75rem 1rem;
+  z-index: 10000;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 0 0 4px 0;
+  transition: top 0.15s ease;
+}
+.skip-link:focus {
+  top: 0;
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
+  color: var(--white);
+}
+
+/* Cross-page navigation strip on research/* pages */
+.page-siblings {
+  margin-top: 3.5rem;
+  padding: 1.5rem 1.25rem;
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-left: 4px solid var(--brand);
+  border-radius: 8px;
+  text-align: center;
+}
+.page-siblings .label {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--brand);
+  margin-bottom: 0.85rem;
+}
+.page-siblings a {
+  display: inline-block;
+  padding: 0.45rem 1.1rem;
+  margin: 0.25rem;
+  background: var(--white);
+  color: var(--brand);
+  border: 1px solid #cbd5e1;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease, transform 0.1s ease, box-shadow 0.15s ease;
+}
+.page-siblings a:hover,
+.page-siblings a:focus-visible {
+  background: var(--brand);
+  color: var(--white);
+  border-color: var(--brand);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(30, 58, 138, 0.18);
+  text-decoration: none;
+  outline: none;
 }
 
 /* Availability banner (home page) */
@@ -294,6 +405,11 @@ footer {
   padding: 1.25rem 1.5rem;
   display: flex;
   flex-direction: column;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.repo-callout:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.12);
 }
 .repo-callout h3 {
   margin: 0 0 0.5rem;
@@ -333,4 +449,20 @@ footer {
   .dropdown-content { position: static; width: 100%; box-shadow: none; border: 1px solid #e5e7eb; }
   .flex-layout { gap: 1.5rem; }
   header h1 { font-size: 2rem; }
+}
+
+/* Very small phones */
+@media (max-width: 480px) {
+  header { padding: 1.5rem 0.75rem; }
+  header h1 { font-size: 1.6rem; }
+  header p { font-size: 0.95rem; }
+  .container { padding: 1.25rem; margin: 0.5rem; }
+  .profile-section { flex-direction: column; align-items: center; text-align: center; }
+  .profile-section img { max-width: 80%; }
+  .profile-text { min-width: 0; width: 100%; text-align: left; }
+}
+
+/* Larger desktops — slightly wider container for more breathing room */
+@media (min-width: 1024px) {
+  .container { max-width: 1100px; }
 }

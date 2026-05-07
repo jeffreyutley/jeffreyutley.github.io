@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Research software by Jeffrey Utley — installable Python packages (AOModel, BoilingFlow) for aero-optic synthetic data generation, validated on measured wind tunnel data.">
+  <meta name="description" content="Research software by Jeffrey Utley — pip-installable Python packages (AOModel, BoilingFlow) for aero-optic synthetic data generation, validated on measured wind tunnel data.">
   <title>Jeffrey Utley - Software</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to main content</a>
   <header>
     <h1>Software</h1>
     <p>Jeffrey Utley</p>
@@ -31,14 +32,14 @@
   <a href="contact.html">Contact</a>
 </nav>
 
-  <div class="container">
+  <main id="main" class="container">
     <p>
       Below are my open-source research software packages, plus selected coursework and other personal projects.
       You can find more on my <a href="https://github.com/jeffreyutley" target="_blank" rel="noopener noreferrer">GitHub profile</a>.
     </p>
     <div class="core-practices">
       <strong>Core Practices:</strong>
-      <span class="badge">Git/GitHub</span> <span class="badge">Reproducible Workflows</span> <span class="badge">Installable Packages</span>
+      <span class="badge">Git/GitHub</span> <span class="badge">Reproducible Workflows</span> <span class="badge">pip-installable</span>
     </div>
     <hr class="section-divider">
 
@@ -51,7 +52,7 @@
       </div>
       <div>
         <span class="badge">Python</span>
-        <span class="badge">Installable Package</span>
+        <span class="badge">pip-installable</span>
         <span class="badge">Synthetic Data Generation</span>
         <span class="badge">NumPy/SciPy</span>
         <span class="badge">Parameter Estimation</span>
@@ -59,10 +60,12 @@
         <span class="badge">Aero-Optics</span>
       </div>
       <p>
-        Installable Python package implementing the ReVAR (Re-whitened Vector AutoRegression) algorithm for aero-optic modeling and synthetic phase-screen generation, validated on measured wind tunnel data.
+        pip-installable Python package implementing the ReVAR (Re-whitened Vector AutoRegression) algorithm for aero-optic modeling and synthetic phase-screen generation, validated on measured wind tunnel data.
         Unlike traditional physics-based models, this fully automated, data-driven approach learns the spatial and temporal statistics of optical turbulence directly from data.
-        Validated on two wind-tunnel datasets with worst-case 4% NRMSE on the temporal power spectrum. Includes installation scripts, thorough documentation, and reproducible examples.
+        Validated on two wind-tunnel datasets with worst-case 4% NRMSE on the temporal power spectrum. Includes thorough documentation and reproducible examples.
       </p>
+      <span class="install-label">Install:</span>
+      <pre><code>pip install aomodel</code></pre>
     </div>
 
     <div class="cv-item">
@@ -72,7 +75,7 @@
       </div>
       <div>
         <span class="badge">Python</span>
-        <span class="badge">Installable Package</span>
+        <span class="badge">pip-installable</span>
         <span class="badge">Synthetic Data Generation</span>
         <span class="badge">NumPy/SciPy</span>
         <span class="badge">Inverse Problems</span>
@@ -80,10 +83,12 @@
         <span class="badge">Spectral Analysis</span>
       </div>
       <p>
-        Installable Python package for boiling-flow parameter estimation and anisotropic phase-screen generation, validated on measured wind tunnel data.
+        pip-installable Python package for boiling-flow parameter estimation and anisotropic phase-screen generation, validated on measured wind tunnel data.
         Extends a Fourier-based data synthesis method with novel automated parameter estimation and a spatial-anisotropy extension. Validated on two wind-tunnel datasets.
-        Includes installation scripts, thorough documentation, and reproducible examples.
+        Includes thorough documentation and reproducible examples.
       </p>
+      <span class="install-label">Install:</span>
+      <pre><code>pip install boiling-flow</code></pre>
     </div>
 
     <h2>Coursework &amp; Other Software</h2>
@@ -119,7 +124,7 @@
       </p>
     </div>
 
-  </div>
+  </main>
   <footer>&copy; 2026 Jeffrey Utley</footer>
 
 <script src="script.js"></script>

@@ -58,9 +58,10 @@
 
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to main content</a>
   <header>
     <h1>Jeffrey Utley</h1>
-    <p>Ph.D. Candidate, Department of Mathematics, Purdue University</p>
+    <p>PhD Candidate, Department of Mathematics, Purdue University</p>
   </header>
   
 <nav>
@@ -80,13 +81,13 @@
   <a href="contact.html">Contact</a>
 </nav>
 
-<div class="container">
+<main id="main" class="container">
   <div class="availability-banner">
     <strong>Graduating December 2026</strong> &middot; Open to Research Scientist &amp; R&amp;D positions (national labs, industry) &middot; U.S. Citizen
   </div>
 
   <div class="flex-layout profile-section">
-    <img src="Jeffrey_Utley_300.jpg" srcset="Jeffrey_Utley_300.jpg 1x, Jeffrey_Utley_600.jpg 2x" alt="Jeffrey Utley" width="300" height="450">
+    <img src="Jeffrey_Utley_300.jpg" srcset="Jeffrey_Utley_300.jpg 1x, Jeffrey_Utley_600.jpg 2x" alt="Jeffrey Utley, Mathematics PhD candidate at Purdue University" width="300" height="450">
 
     <div class="profile-text">
       <ul class="profile-list">
@@ -99,7 +100,6 @@
           <li><strong>GitHub</strong>: <a href="https://github.com/jeffreyutley" target="_blank" rel="noopener noreferrer">github.com/jeffreyutley</a></li>
           <li><strong>LinkedIn</strong>: <a href="https://www.linkedin.com/in/jeffrey-utley" target="_blank" rel="noopener noreferrer">linkedin.com/in/jeffrey-utley</a></li>
           <li><strong>ResearchGate</strong>: <a href="https://www.researchgate.net/profile/Jeffrey-Utley" target="_blank" rel="noopener noreferrer">researchgate.net/profile/Jeffrey-Utley</a></li>
-          <li><strong>Objective</strong>: Seeking R&D Roles (Industry/National Labs)</li>
       </ul>
       <br>
       <a href="CV.pdf" class="btn" target="_blank">Download CV (PDF)</a>
@@ -109,21 +109,18 @@
 
   <h2>Research Bio</h2>
   <p>
-    I am a Ph.D. candidate in the Department of Mathematics at Purdue University (Computational Science concentration), developing <strong>statistically validated synthetic data generation algorithms</strong> and <strong>reproducible scientific software</strong> for turbulence-driven imaging and simulation. I work in the <a href="https://www.youtube.com/watch?v=S7YM8nvIm7c&list=PL3ZrjaBngMS3kYr9-ExG9CZFShOMKmVg_&index=4" target="_blank" rel="noopener noreferrer">Integrated Imaging Lab</a> under the guidance of Profs. Greg Buzzard and Charlie Bouman, with three years of DoD-funded research in active collaboration with the <strong>Air Force Research Laboratory (AFRL)</strong> and <strong>Air Force Institute of Technology (AFIT)</strong>.
+    I am a PhD candidate in the Department of Mathematics at Purdue University (Computational Science concentration), developing <strong>statistically validated synthetic data generation algorithms</strong> and <strong>reproducible scientific software</strong> for turbulence-driven imaging and simulation. I work in the <a href="https://www.youtube.com/watch?v=S7YM8nvIm7c&list=PL3ZrjaBngMS3kYr9-ExG9CZFShOMKmVg_&index=4" target="_blank" rel="noopener noreferrer">Integrated Imaging Lab</a> under the guidance of Profs. Greg Buzzard and Charlie Bouman, with three years of DoD-funded research in active collaboration with the <strong>Air Force Research Laboratory (AFRL)</strong> and <strong>Air Force Institute of Technology (AFIT)</strong>.
   </p>
   <p>
-    My algorithms simulate the complex <strong>optical distortions</strong> caused by high-speed aerodynamic turbulence. Using both physics-based models with modern statistical learning methods, I build <strong>validated synthetic data pipelines</strong> that serve as a &ldquo;virtual testbed,&rdquo; enabling engineers to evaluate and refine <strong>Adaptive Optics (AO)</strong> correction systems computationally and avoid the prohibitive costs of physical experiments. All algorithms are released as installable, version-controlled Python packages with reproducible examples and full documentation.
-  </p>
-  <p>
-    I am targeting <strong>Research Scientist and R&amp;D roles</strong> at national laboratories and in industry, with focus on <em>modeling, estimation, and simulation; computational imaging; signal processing; and scientific software</em>.
+    My algorithms simulate the complex <strong>optical distortions</strong> caused by high-speed aerodynamic turbulence. Using both physics-based models with modern statistical learning methods, I build <strong>validated synthetic data pipelines</strong> that serve as a &ldquo;virtual testbed,&rdquo; enabling engineers to evaluate and refine <strong>Adaptive Optics (AO)</strong> correction systems computationally and avoid the prohibitive costs of physical experiments. All algorithms are released as pip-installable, version-controlled Python packages with reproducible examples and full documentation.
   </p>
 
   <h2>Research at a Glance</h2>
   <ul class="research-stats">
-    <li><strong>3 first-author papers</strong> &mdash; <i>Optical Engineering</i> (in press) and 2 SPIE Optics + Photonics proceedings; 1 manuscript under review</li>
+    <li><strong>4 first-author papers</strong> &mdash; <i>Optical Engineering</i> and <i>Journal of the Optical Society of America A</i> (both in press); 2 SPIE Optics + Photonics proceedings</li>
     <li><strong>2 open-source Python packages</strong> &mdash; AOModel and BoilingFlow, both validated on measured wind tunnel data</li>
     <li><strong>8 conference presentations</strong> &mdash; SPIE Optics + Photonics, Electronic Imaging, and Directed Energy S&amp;T Symposia</li>
-    <li><strong>3 years of DoD-funded research</strong> &mdash; AFRL Scholars (2024 &amp; 2026) and ORISE/AFIT Doctoral Research Fellow (2025)</li>
+    <li><strong>3 years of DoD-funded research</strong> &mdash; AFRL Scholars Program (2024 &amp; 2026) and ORISE/AFIT Doctoral Research Fellow (2025)</li>
     <li><strong>Worst-case 4% NRMSE</strong> on the temporal power spectrum (ReVAR algorithm), substantially improving over existing methods</li>
   </ul>
 
@@ -133,20 +130,22 @@
       <h3>AOModel</h3>
       <div class="repo-badges">
         <span class="badge">Python</span>
-        <span class="badge">Installable Package</span>
+        <span class="badge">pip-installable</span>
         <span class="badge">ReVAR</span>
       </div>
-      <p>Installable Python package implementing the <strong>ReVAR</strong> algorithm for data-driven synthesis of aero-optic phase screens. Validated on two wind tunnel datasets with worst-case 4% NRMSE on the temporal power spectrum.</p>
+      <p>pip-installable Python package implementing the <strong>ReVAR</strong> algorithm for data-driven synthesis of aero-optic phase screens. Validated on two wind tunnel datasets with worst-case 4% NRMSE on the temporal power spectrum.</p>
+      <pre><code>pip install aomodel</code></pre>
       <a href="https://github.com/jeffreyutley/aomodel_public" class="btn" target="_blank" rel="noopener noreferrer">View Code on GitHub</a>
     </div>
     <div class="repo-callout">
       <h3>BoilingFlow</h3>
       <div class="repo-badges">
         <span class="badge">Python</span>
-        <span class="badge">Installable Package</span>
+        <span class="badge">pip-installable</span>
         <span class="badge">Boiling Flow</span>
       </div>
-      <p>Installable Python package implementing <strong>Boiling Flow</strong> parameter estimation and anisotropic phase-screen generation; extends a Fourier-based synthesis method with automated parameter estimation, validated on measured wind tunnel data.</p>
+      <p>pip-installable Python package implementing <strong>Boiling Flow</strong> parameter estimation and anisotropic phase-screen generation; extends a Fourier-based synthesis method with automated parameter estimation, validated on measured wind tunnel data.</p>
+      <pre><code>pip install boiling-flow</code></pre>
       <a href="https://github.com/jeffreyutley/boiling_flow" class="btn" target="_blank" rel="noopener noreferrer">View Code on GitHub</a>
     </div>
   </div>
@@ -185,6 +184,10 @@
   <h2>Recent News</h2>
   <div class="news-item">
     <span class="news-date">May 2026</span>
+    "ReVAR: A data-driven algorithm for generating aero-optic phase screens" was accepted for publication in <i>Journal of the Optical Society of America A</i>.
+  </div>
+  <div class="news-item">
+    <span class="news-date">May 2026</span>
     "Boiling flow estimation for aero-optic phase screen generation" was accepted for publication in <i>Optical Engineering</i>.
   </div>
   <div class="news-item">
@@ -198,10 +201,6 @@
   <div class="news-item">
     <span class="news-date">Mar 2026</span>
     Presented "ReVAR: A data-driven algorithm for generating aero-optic phase screens" at <strong>Electronic Imaging 2026</strong> in Burlingame, CA.
-  </div>
-  <div class="news-item">
-    <span class="news-date">Feb 2026</span>
-    Selected for the <strong>AFRL Scholars Program</strong> (Summer 2026), continuing the Purdue&ndash;AFRL/AFIT collaboration on synthetic data generation for turbulence-driven imaging.
   </div>
 
   <h2>Leadership & Service</h2>
@@ -228,7 +227,7 @@
   <p>
     Originally from Nashville, TN, I earned my B.S. at the <a href="https://www.utk.edu/" target="_blank" rel="noopener noreferrer">University of Tennessee, Knoxville</a>, where I enjoyed hiking in the Smoky Mountains (<a href="https://en.wikipedia.org/wiki/Mount_Le_Conte_(Tennessee)" target="_blank" rel="noopener noreferrer">Mount Le Conte</a> being a favorite). Since August 2022 I&rsquo;ve been in West Lafayette, IN for graduate school, where I've found a similar enjoyment at nearby trails such as <a href="https://www.tippecanoe.in.gov/facilities/facility/details/Wabash-Heritage-Trail-16" target="_blank" rel="noopener noreferrer">Wabash Heritage Trail</a>, <a href="https://www.in.gov/dnr/state-parks/parks-lakes/prophetstown-state-park/" target="_blank" rel="noopener noreferrer">Prophetstown State Park</a>, and <a href="https://www.in.gov/dnr/state-parks/parks-lakes/turkey-run-state-park/" target="_blank" rel="noopener noreferrer">Turkey Run State Park</a>. Outside research, I enjoy live music in Indianapolis and Chicago &mdash; mostly genre-blending acts in blues, rock, jazz, funk, bluegrass, and country.
   </p>
-</div>
+</main>
 
 <footer>&copy; 2026 Jeffrey Utley</footer>
   

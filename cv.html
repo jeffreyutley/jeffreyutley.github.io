@@ -10,6 +10,7 @@
 
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to main content</a>
   <header>
     <h1>Curriculum Vitae</h1>
     <p>Jeffrey Utley</p>
@@ -32,7 +33,7 @@
   <a href="contact.html">Contact</a>
 </nav>
 
-  <div class="container">
+  <main id="main" class="container">
     <p>
       You can view my CV below (updated May 2026).
     </p>
@@ -57,7 +58,7 @@
 
       <!-- Research Summary -->
       <h2>Research Summary</h2>
-      <p>PhD candidate at Purdue University developing statistically validated synthetic data generation algorithms and reproducible scientific software for turbulence-driven imaging and simulation. Three years of DoD-funded research in active collaboration with AFRL and AFIT, with first-author publications in <i>Optical Engineering</i> and SPIE proceedings, and installable Python packages validated on measured datasets. Targeting Research Scientist and R&amp;D roles at national laboratories and in industry, with focus on modeling, estimation, and simulation; computational imaging; signal processing; and scientific software.</p>
+      <p>PhD candidate at Purdue University developing statistically validated synthetic data generation algorithms and reproducible scientific software for turbulence-driven imaging and simulation. Three years of DoD-funded research in active collaboration with AFRL and AFIT, with first-author publications in <i>Journal of the Optical Society of America A</i>, <i>Optical Engineering</i>, and SPIE proceedings, and pip-installable Python packages validated on measured datasets. Targeting Research Scientist and R&amp;D roles at national laboratories and in industry, with focus on modeling, estimation, and simulation; computational imaging; signal processing; and scientific software.</p>
 
       <!-- Technical Skills -->
       <h2>Technical Skills</h2>
@@ -77,8 +78,7 @@
           <span>Ph.D., Mathematics — Purdue University</span>
           <span class="cv-date">Expected Dec 2026</span>
         </div>
-        <div class="cv-sub">Concentration: Computational Science • GPA: 4.00</div>
-        <div class="cv-sub">Advisors: Prof. Gregery Buzzard and Prof. Charles Bouman</div>
+        <div class="cv-sub">Concentration: Computational Science • GPA: 4.00 • Advisors: Prof. Gregery Buzzard and Prof. Charles Bouman</div>
         <div class="cv-sub">Dissertation: Synthetic Data Generation for Aero-Optics</div>
         <div class="cv-sub">Selected Coursework: Foundations of Computational Imaging; Digital Image Processing; Digital Cameras &amp; Fourier Optics; Deep Learning; Numerical Optimization; Numerical Linear Algebra; Numerical Analysis; Probability</div>
       </div>
@@ -101,7 +101,7 @@
         <ul class="cv-list">
           <li>Designed <strong>ReVAR</strong>, a novel data-driven algorithm producing synthetic data that matches measured statistics from physical experiments with worst-case <strong>4% NRMSE</strong> on the temporal power spectrum — a substantial improvement over existing methods.</li>
           <li>Developed <strong>BoilingFlow</strong>, extending a Fourier-based data synthesis method with novel automated parameter estimation and a spatial-anisotropy extension; validated on measured and simulated datasets.</li>
-          <li>Delivered all results as modular, version-controlled, <strong>installable Python packages</strong> with reproducible examples and full documentation; produced first-author publications in <i>Optical Engineering</i> and SPIE proceedings.</li>
+          <li>Delivered all results as modular, version-controlled, <strong>pip-installable Python packages</strong> with reproducible examples and full documentation; produced first-author publications in <i>Journal of the Optical Society of America A</i>, <i>Optical Engineering</i>, and SPIE proceedings.</li>
         </ul>
       </div>
 
@@ -140,27 +140,23 @@
 
       <h2>Research Software</h2>
       <ul class="cv-list">
-        <li><strong>AOModel</strong> — installable Python package implementing the ReVAR algorithm for data-driven synthesis of optical turbulence data. Validated on two wind tunnel datasets with worst-case 4% NRMSE on the temporal power spectrum. Includes thorough documentation and reproducible examples. <a href="https://github.com/jeffreyutley/aomodel_public" target="_blank" rel="noopener noreferrer">[GitHub]</a></li>
-        <li><strong>BoilingFlow</strong> — installable Python package implementing the BoilingFlow algorithm, extending a Fourier-based data synthesis method with automated parameter estimation and a spatial-anisotropy extension. Validated on two wind tunnel datasets. Includes thorough documentation and reproducible examples. <a href="https://github.com/jeffreyutley/boiling_flow" target="_blank" rel="noopener noreferrer">[GitHub]</a></li>
+        <li><strong>AOModel</strong> — pip-installable Python package implementing the ReVAR algorithm for data-driven synthesis of optical turbulence data. Validated on two wind tunnel datasets with worst-case 4% NRMSE on the temporal power spectrum. Includes thorough documentation and reproducible examples. <a href="https://github.com/jeffreyutley/aomodel_public" target="_blank" rel="noopener noreferrer">[GitHub]</a></li>
+        <li><strong>BoilingFlow</strong> — pip-installable Python package implementing the BoilingFlow algorithm, extending a Fourier-based data synthesis method with automated parameter estimation and a spatial-anisotropy extension. Validated on two wind tunnel datasets. Includes thorough documentation and reproducible examples. <a href="https://github.com/jeffreyutley/boiling_flow" target="_blank" rel="noopener noreferrer">[GitHub]</a></li>
       </ul>
 
       <h2>Publications</h2>
 
       <h3>Refereed Journal Articles</h3>
       <ul>
-        <li>Utley, J., Buzzard, G., Bouman, C., &amp; Kemnetz, M. Boiling flow estimation for aero-optic phase screen generation. <i>Optical Engineering</i> (in press). Preprint: <a href="https://arxiv.org/abs/2601.12171" target="_blank" rel="noopener noreferrer">[arXiv:2601.12171]</a>.</li>
-        <li>Lind, J. &amp; Utley, J. (2022). Phase transition for a family of complex-driven Loewner hulls. <i>Involve, a Journal of Mathematics</i>, 15(3), 447–474. <a href="https://doi.org/10.2140/involve.2022.15.447" target="_blank" rel="noopener noreferrer">[DOI:10.2140/involve.2022.15.447]</a>. Preprint: <a href="https://arxiv.org/abs/2106.14940" target="_blank" rel="noopener noreferrer">[arXiv:2106.14940]</a></li>
+        <li><strong>Utley, J.</strong>, Buzzard, G., Bouman, C., &amp; Kemnetz, M. ReVAR: A data-driven algorithm for generating aero-optic phase screens. <i>Journal of the Optical Society of America A</i> <strong>(in press)</strong>. Preprint: <a href="https://arxiv.org/abs/2604.02326" target="_blank" rel="noopener noreferrer">[arXiv:2604.02326]</a>.</li>
+        <li><strong>Utley, J.</strong>, Buzzard, G., Bouman, C., &amp; Kemnetz, M. Boiling flow estimation for aero-optic phase screen generation. <i>Optical Engineering</i> <strong>(in press)</strong>. Preprint: <a href="https://arxiv.org/abs/2601.12171" target="_blank" rel="noopener noreferrer">[arXiv:2601.12171]</a>.</li>
+        <li>Lind, J. &amp; <strong>Utley, J.</strong> (2022). Phase transition for a family of complex-driven Loewner hulls. <i>Involve, a Journal of Mathematics</i>, 15(3), 447–474. <a href="https://doi.org/10.2140/involve.2022.15.447" target="_blank" rel="noopener noreferrer">[DOI:10.2140/involve.2022.15.447]</a>. Preprint: <a href="https://arxiv.org/abs/2106.14940" target="_blank" rel="noopener noreferrer">[arXiv:2106.14940]</a></li>
       </ul>
 
       <h3>Conference Proceedings</h3>
       <ul>
-        <li>Utley, J., Buzzard, G., Bouman, C., &amp; Kemnetz, M. (2025). Boiling flow parameter estimation from boundary layer data. <i>SPIE Optics + Photonics</i>. <a href="https://doi.org/10.1117/12.3063655" target="_blank" rel="noopener noreferrer">[DOI:10.1117/12.3063655]</a>. Preprint: <a href="https://arxiv.org/abs/2602.10394" target="_blank" rel="noopener noreferrer">[arXiv:2602.10394]</a>.</li>
-        <li>Utley, J., Buzzard, G., Bouman, C., &amp; Kemnetz, M. (2024). Data-driven synthetic wavefront generation for boundary layer data. <i>SPIE Optics + Photonics</i>. <a href="https://doi.org/10.1117/12.3027740" target="_blank" rel="noopener noreferrer">[DOI:10.1117/12.3027740]</a>. Preprint: <a href="https://arxiv.org/abs/2409.04873" target="_blank" rel="noopener noreferrer">[arXiv:2409.04873]</a>.</li>
-      </ul>
-
-      <h3>Manuscripts Under Review</h3>
-      <ul>
-        <li>Utley, J., Buzzard, G., Bouman, C., &amp; Kemnetz, M. ReVAR: A data-driven algorithm for generating aero-optic phase screens. Preprint: <a href="https://arxiv.org/abs/2604.02326" target="_blank" rel="noopener noreferrer">[arXiv:2604.02326]</a>.</li>
+        <li><strong>Utley, J.</strong>, Buzzard, G., Bouman, C., &amp; Kemnetz, M. (2025). Boiling flow parameter estimation from boundary layer data. <i>SPIE Optics + Photonics</i>. <a href="https://doi.org/10.1117/12.3063655" target="_blank" rel="noopener noreferrer">[DOI:10.1117/12.3063655]</a>. Preprint: <a href="https://arxiv.org/abs/2602.10394" target="_blank" rel="noopener noreferrer">[arXiv:2602.10394]</a>.</li>
+        <li><strong>Utley, J.</strong>, Buzzard, G., Bouman, C., &amp; Kemnetz, M. (2024). Data-driven synthetic wavefront generation for boundary layer data. <i>SPIE Optics + Photonics</i>. <a href="https://doi.org/10.1117/12.3027740" target="_blank" rel="noopener noreferrer">[DOI:10.1117/12.3027740]</a>. Preprint: <a href="https://arxiv.org/abs/2409.04873" target="_blank" rel="noopener noreferrer">[arXiv:2409.04873]</a>.</li>
       </ul>
 
       <h2>Conference Presentations</h2>
@@ -186,7 +182,7 @@
 
     </div>
 
-  </div>
+  </main>
   <footer>&copy; 2026 Jeffrey Utley</footer>
 
 <script src="script.js"></script>
