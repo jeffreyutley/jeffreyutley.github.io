@@ -168,6 +168,44 @@ h3 {
   margin-right: 0.5rem;
   margin-bottom: 0.5rem;
 }
+a.badge {
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+}
+a.badge:hover,
+a.badge:focus-visible {
+  background: var(--brand);
+  color: var(--white);
+  text-decoration: none;
+}
+.badge-license { background: #dbeafe; color: #1e3a8a; }
+
+/* Collapsed "Cite this work" block (uses native <details>) */
+.cite-details {
+  margin: 0.75rem 0 0;
+  border-left: 3px solid var(--brand);
+  padding-left: 0.75rem;
+}
+.cite-details > summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--heading);
+  list-style: none;
+}
+.cite-details > summary::-webkit-details-marker { display: none; }
+.cite-details > summary::before {
+  content: "\25B8";
+  display: inline-block;
+  margin-right: 0.4rem;
+  transition: transform 0.15s;
+}
+.cite-details[open] > summary::before { transform: rotate(90deg); }
+.cite-details > summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.cite-details pre { margin-top: 0.5rem; }
 
 /* Home/News Specifics */
 .btn {
@@ -267,6 +305,23 @@ hr.section-divider {
   text-align: center;
   margin: 2rem 0;
 }
+.figure-container > img,
+.figure-container > video { display: block; margin: 0 auto; }
+
+figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.92rem;
+  font-style: italic;
+  color: #4b5563;
+  line-height: 1.5;
+  max-width: 56rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.inline-figure { margin: 0; text-align: center; }
+.inline-figure > img { display: block; margin: 0 auto; }
+.inline-figure figcaption { max-width: 300px; text-align: left; }
 
 /* Footer */
 footer {
