@@ -35,7 +35,7 @@
 
   <main id="main" class="container">
     <p>
-      You can view my CV below (updated May 2026).
+      You can view my CV below (updated Jun 2026).
     </p>
     <a href="CV.pdf" class="btn btn-download" target="_blank">Download CV (PDF)</a>
     <hr class="section-divider">
@@ -49,7 +49,7 @@
         <p>Purdue University, Department of Mathematics | West Lafayette, IN</p>
         <p>
           <a href="mailto:utleyj@purdue.edu">utleyj@purdue.edu</a> |
-          <a href="index.html" target="_blank" rel="noopener noreferrer">[Website]</a> |
+          <a href="https://www.math.purdue.edu/~utleyj/" target="_blank" rel="noopener noreferrer">[Purdue]</a> |
           <a href="https://github.com/jeffreyutley" target="_blank" rel="noopener noreferrer">[GitHub]</a> |
           <a href="https://linkedin.com/in/jeffrey-utley" target="_blank" rel="noopener noreferrer">[LinkedIn]</a>
         </p>
@@ -63,12 +63,13 @@
       <!-- Technical Skills -->
       <h2>Technical Skills</h2>
       <ul class="cv-list">
-        <li><strong>Methods:</strong> synthetic data generation; inverse problems and parameter estimation; spectral analysis (FFT, PSD, PCA); numerical optimization (first-order methods, Mirror Descent); statistical modeling (Gaussian models, Poisson point processes); Bayesian inference; signal and image processing.</li>
-        <li><strong>Programming:</strong> Python, C/C++, MATLAB, Julia.</li>
+        <li><strong>Methods:</strong> algorithm design and analysis; synthetic data generation; inverse problems and parameter estimation; spectral analysis (FFT, PSD, PCA); numerical optimization (first-order methods, Mirror Descent); statistical modeling (Gaussian models, Poisson point processes); Bayesian inference; signal and image processing.</li>
+        <li><strong>Optics &amp; Imaging:</strong> aero-optics; optical turbulence characterization; atmospheric optics; phase screen generation; wavefront synthesis; boundary layer turbulence; Fourier optics; computational imaging; electro-optical imaging.</li>
+        <li><strong>Programming:</strong> Python, C/C++, MATLAB, Julia; object-oriented design and modular package architecture.</li>
         <li><strong>Scientific Computing:</strong> NumPy, SciPy, pandas, Matplotlib, Jupyter, OpenCV, seaborn.</li>
         <li><strong>Machine Learning:</strong> PyTorch, JAX.</li>
-        <li><strong>HPC &amp; Systems:</strong> Linux/UNIX, bash, SSH, Slurm (Purdue clusters).</li>
-        <li><strong>Reproducibility &amp; Tools:</strong> Git/GitHub, pip/conda, setuptools/pyproject.</li>
+        <li><strong>HPC &amp; Systems:</strong> Linux/UNIX, bash, SSH, shell scripts, Slurm (Purdue clusters).</li>
+        <li><strong>Reproducibility &amp; Tools:</strong> Git/GitHub, pip/conda, setuptools/pyproject, Make; reproducible builds, automated testing (pytest), and technical documentation.</li>
       </ul>
 
       <!-- Education -->
@@ -98,17 +99,23 @@
           <span>Graduate Research Assistant — Purdue University, Department of Mathematics</span>
           <span class="cv-date">Jan 2023 – Present</span>
         </div>
+        <div class="cv-sub">Academic-year appointment; paused each summer for the research placements below.</div>
         <ul class="cv-list">
           <li>Designed <strong>ReVAR</strong>, a novel data-driven algorithm producing synthetic data that matches measured statistics from physical experiments with worst-case <strong>4% NRMSE</strong> on the temporal power spectrum — a substantial improvement over existing methods.</li>
-          <li>Developed <strong>BoilingFlow</strong>, extending a Fourier-based data synthesis method with novel automated parameter estimation and a spatial-anisotropy extension; validated on measured and simulated datasets.</li>
-          <li>Delivered all results as modular, version-controlled, <strong>pip-installable Python packages</strong> with reproducible examples and full documentation; produced first-author publications in <i>Journal of the Optical Society of America A</i>, <i>Optical Engineering</i>, and SPIE proceedings.</li>
+          <li>Developed <strong>BoilingFlow</strong>, extending a Fourier-based data synthesis method with novel automated parameter estimation and a spatial-anisotropy extension; validated on measured and simulated datasets (worst-case 12% NRMSE on the temporal power spectrum).</li>
+          <li>Built statistical estimation pipelines (FFT/PSD, PCA, Gaussian models) over measured phase screen data spanning &gt;10,000 time-samples per dataset.</li>
+          <li>Delivered all results as modular, version-controlled, <strong>pip-installable Python packages</strong> with reproducible examples and full documentation; ran large-scale parameter sweeps on Purdue HPC clusters via Slurm; produced first-author publications in <i>Journal of the Optical Society of America A</i>, <i>Optical Engineering</i>, and SPIE proceedings.</li>
+          <li>Collaborate weekly with DoD program scientists to translate experimental requirements into validated software deliverables.</li>
+          <li>Authored four first-author papers (two journal, two conference) in &lt;4 years; presented results through eight conference talks at national conferences.</li>
         </ul>
       </div>
+
+      <h3>Summer Research Placements</h3>
 
       <div class="cv-item">
         <div class="cv-header">
           <span>AFRL Scholars Program (USRA) — Air Force Research Laboratory (virtual)</span>
-          <span class="cv-date">May 2026 – Sept 2026 (upcoming)</span>
+          <span class="cv-date">May 2026 – Sept 2026</span>
         </div>
         <div class="cv-sub">Mentor: Jeremy Vorenberg</div>
         <ul class="cv-list">
@@ -123,7 +130,7 @@
         </div>
         <div class="cv-sub">Mentor: Prof. Matthew Kemnetz</div>
         <ul class="cv-list">
-          <li>Advanced the BoilingFlow algorithm as part of the Purdue–AFRL/AFIT collaboration; delivered weekly virtual technical briefings to AFIT faculty and contributed to a SPIE conference paper deliverable.</li>
+          <li>Held the lead computational-science role on the Purdue–AFRL/AFIT collaboration; advanced the BoilingFlow algorithm, delivered weekly virtual technical briefings to AFIT faculty and contributed to a SPIE conference paper deliverable.</li>
         </ul>
       </div>
 
@@ -134,21 +141,21 @@
         </div>
         <div class="cv-sub">Mentor: Prof. Matthew Kemnetz</div>
         <ul class="cv-list">
-          <li>Developed and evaluated the ReVAR algorithm against measured wind tunnel data; delivered an end-of-summer technical briefing to AFRL staff and contributed to a SPIE conference paper.</li>
+          <li>Lead computational-science contributor on the Purdue–AFRL/AFIT collaboration and first AFRL Scholars selection; developed and evaluated the ReVAR algorithm against measured wind tunnel data; delivered an end-of-summer technical briefing to AFRL staff and contributed to a SPIE conference paper.</li>
         </ul>
       </div>
 
       <h2>Research Software</h2>
       <ul class="cv-list">
         <li><strong>AOModel</strong> — pip-installable Python package implementing the ReVAR algorithm for data-driven synthesis of optical turbulence data. Validated on two wind tunnel datasets with worst-case 4% NRMSE on the temporal power spectrum. Includes thorough documentation and reproducible examples. <a href="https://github.com/jeffreyutley/aomodel_public" target="_blank" rel="noopener noreferrer">[GitHub]</a></li>
-        <li><strong>BoilingFlow</strong> — pip-installable Python package implementing the BoilingFlow algorithm, extending a Fourier-based data synthesis method with automated parameter estimation and a spatial-anisotropy extension. Validated on two wind tunnel datasets. Includes thorough documentation and reproducible examples. <a href="https://github.com/jeffreyutley/boiling_flow" target="_blank" rel="noopener noreferrer">[GitHub]</a></li>
+        <li><strong>BoilingFlow</strong> — pip-installable Python package implementing the BoilingFlow algorithm, extending a Fourier-based data synthesis method with automated parameter estimation and a spatial-anisotropy extension. Validated on two wind tunnel datasets (worst-case 12% NRMSE on the temporal power spectrum). Includes thorough documentation and reproducible examples. <a href="https://github.com/jeffreyutley/boiling_flow" target="_blank" rel="noopener noreferrer">[GitHub]</a></li>
       </ul>
 
       <h2>Publications</h2>
 
       <h3>Refereed Journal Articles</h3>
       <ul>
-        <li><strong>Utley, J.</strong>, Buzzard, G., Bouman, C., &amp; Kemnetz, M. ReVAR: A data-driven algorithm for generating aero-optic phase screens. <i>Journal of the Optical Society of America A</i> <strong>(in press)</strong>. Preprint: <a href="https://arxiv.org/abs/2604.02326" target="_blank" rel="noopener noreferrer">[arXiv:2604.02326]</a>.</li>
+        <li><strong>Utley, J.</strong>, Buzzard, G., Bouman, C., &amp; Kemnetz, M. ReVAR: A data-driven algorithm for generating aero-optic phase screens. <i>Journal of the Optical Society of America A</i>, 43(7) <strong>(in press)</strong>. <a href="https://doi.org/10.1364/JOSAA.600450" target="_blank" rel="noopener noreferrer">[DOI:10.1364/JOSAA.600450]</a>. Preprint: <a href="https://arxiv.org/abs/2604.02326" target="_blank" rel="noopener noreferrer">[arXiv:2604.02326]</a>.</li>
         <li><strong>Utley, J.</strong>, Buzzard, G., Bouman, C., &amp; Kemnetz, M. Boiling flow estimation for aero-optic phase screen generation. <i>Optical Engineering</i> <strong>(in press)</strong>. Preprint: <a href="https://arxiv.org/abs/2601.12171" target="_blank" rel="noopener noreferrer">[arXiv:2601.12171]</a>.</li>
         <li>Lind, J. &amp; <strong>Utley, J.</strong> (2022). Phase transition for a family of complex-driven Loewner hulls. <i>Involve, a Journal of Mathematics</i>, 15(3), 447–474. <a href="https://doi.org/10.2140/involve.2022.15.447" target="_blank" rel="noopener noreferrer">[DOI:10.2140/involve.2022.15.447]</a>. Preprint: <a href="https://arxiv.org/abs/2106.14940" target="_blank" rel="noopener noreferrer">[arXiv:2106.14940]</a></li>
       </ul>
@@ -177,7 +184,7 @@
         <li><strong>Awards:</strong> SPIE Student Conference Support Award (2024); Purdue College of Science Travel Award (2024); John H. Barrett Memorial Prize, University of Tennessee (2022).</li>
         <li><strong>Leadership:</strong> President, SIAM Student Chapter, Purdue University (2026–Present); Co-organizer, CCAM Lunch Seminar, Purdue Mathematics (2025–Present).</li>
         <li><strong>Service:</strong> Reviewer, <i>Optical Engineering</i> (SPIE), 2025–Present (2 manuscripts).</li>
-        <li><strong>Teaching:</strong> Graduate TA, Purdue University (2022); Instructor, Wolverine Pathways at University of Michigan (2022–2023); Undergraduate TA &amp; Math Tutor, University of Tennessee (2020–2022).</li>
+        <li><strong>Teaching:</strong> Graduate TA, Purdue University (2022); Instructor, Wolverine Pathways at University of Michigan — math instruction for under-resourced middle and high school students (2022–2023); Undergraduate TA &amp; Math Tutor, University of Tennessee (2020–2022).</li>
       </ul>
 
     </div>
