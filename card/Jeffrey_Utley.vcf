@@ -1,0 +1,13 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Utley;Jeffrey;;;
+FN:Jeffrey Utley
+ORG:Purdue University;Department of Mathematics
+TITLE:PhD Candidate, Applied Mathematics
+ROLE:Research Scientist / R&D
+EMAIL;TYPE=INTERNET,WORK:utleyj@purdue.edu
+URL:https://jeffreyutley.github.io
+URL:https://www.linkedin.com/in/jeffrey-utley
+URL:https://github.com/jeffreyutley
+NOTE:Research Scientist / R&D - Synthetic Data Generation, Computational Imaging, Statistical Modeling
+END:VCARD
